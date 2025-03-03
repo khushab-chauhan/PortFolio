@@ -1,0 +1,67 @@
+/* max-width = 320px
+min-width = 576px
+min-width = 776px
+min-width = 992px */
+
+
+
+
+
+
+
+/* FOR SMALL DEVICE */
+@media screen and (max-width:320px) {
+    .container{
+        margin-left: 1rem;
+        margin-right:1rem ;
+    }
+    .profile-info{
+        column-gap: 1.5rem;
+    }
+    .profile-button{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .skills_content{   
+        gap: 70px;
+    }
+    .filters_content{
+        width: 280px;
+        margin: 5rem auto;
+    }
+}
+@media screen and (max-width:576px) {
+    .projects_content{
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
+}
+/* FOR MEDIUM DEVICE */
+@media screen and (min-width:576px) {
+    .filters_content{
+        width: 320px;
+        margin:6rem auto;
+    }
+    .projects_content{
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
+}
+/* FOR MEDIUM DEVICE */
+@media screen and (min-width:776px) {
+    .skills_content{
+        grid-template-columns: repeat(2,332px);
+        justify-content: center;
+        column-gap: 3rem;
+    }
+    
+}
+/* FOR LARGE DEVICE */
+@media screen and (min-width:992PX) {
+    .skills_content{
+        grid-template-columns: repeat(2,432px);
+    }
+    .projects_content{
+        grid-template-columns: repeat(2,332px);
+    }
+}
